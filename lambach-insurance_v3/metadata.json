@@ -1,8 +1,0 @@
-{
-  "name": "Lambach Insurance",
-  "description": "A modern, fully responsive insurance brokerage website.",
-  "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
-}
