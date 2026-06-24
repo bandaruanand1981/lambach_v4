@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #5568f5;
+  --color-primary-variant: #4356d8;
+  --color-surface: #faf8ff;
+  --color-surface-container: #eaedff;
+  --color-surface-container-low: #f2f3ff;
+  
+  --color-brand-marine: #00174b;
+  
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-plus-jakarta);
+}
+
+@utility section-gap {
+  padding-block: 120px;
+}
+
+@utility layout-container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==========================================
+   Premium Subtle Hover Animation for CTAs
+   ========================================== */
+a.bg-primary,
+button.bg-primary,
+button[type="submit"],
+a[href*="#contact-us"] {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              background-color 0.2s ease, 
+              box-shadow 0.3s ease !important;
+}
+
+a.bg-primary:hover,
+button.bg-primary:hover,
+button[type="submit"]:hover,
+a[href*="#contact-us"]:hover {
+  transform: translateY(-2px) scale(1.025) !important;
+  box-shadow: 0 12px 25px -4px rgba(85, 104, 245, 0.35), 
+              0 4px 12px -2px rgba(85, 104, 245, 0.15) !important;
+}
+
+a.bg-primary:active,
+button.bg-primary:active,
+button[type="submit"]:active,
+a[href*="#contact-us"]:active {
+  transform: translateY(0.5px) scale(0.975) !important;
+  box-shadow: 0 4px 8px -2px rgba(85, 104, 245, 0.25) !important;
+}
